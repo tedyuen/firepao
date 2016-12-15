@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上海消防</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="../assets/css/jquery/jquery.fullPage.css" rel="stylesheet" />
+    <link href="../assets/css/animate+animo.css" rel="stylesheet" />
+</head>
+<body>
+<div id="container">
+    <div id="index" class="index">
+        <div class="back-bottom-1"></div>
+        <div class="back-bottom-3"></div>
+        <img src="images/glim_img.png" width="40px" class="back-top">
+        <div class="back-bottom-15"></div>
+        <div class="back-top-15"></div>
+        <div class="sub-1-text text-color3 font20">XXXXXXXXX点了99炮</div>
+        <div class="share-div">
+            <img src="images/text_green_share.png" height="20px">
+        </div>
+        <!--<div class="enter-div">-->
+            <!--<img src="images/icon_enter_btn.png" height="20px">-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="share-mask">
+    <img class="img-1" src="images/text_share.png" width="250px">
+</div>
+</body>
+<script src='../assets/js/sea.js'></script>
+<script src='../assets/js/jquery/jquery-1.9.1.min.js'></script>
+<script src="../assets/js/jquery/jquery-ui-1.10.3.min.js"></script>
+<script src="../assets/js/jquery/jquery.fullPage.min.js"></script>
+<script src='../assets/js/backbone/underscore.js'></script>
+<script src='../assets/js/backbone/backbone.js'></script>
+<script src='../assets/js/backbone/backbone-localstorage.js'></script>
+<script src="../assets/js/animo.js"></script>
+<script type="text/javascript">
+    var isDebug = false;//测试用
+
+    document.addEventListener('DOMContentLoaded', function() {
+        $(document).ready(function() {
+            $('.share-div').bind("click",function(){
+                $('.share-mask').fadeIn(300);
+            });
+            $('.share-mask').bind("click",function(){
+                $('.share-mask').fadeOut(300);
+            });
+        });
+    }, false);
+</script>
+</html>
